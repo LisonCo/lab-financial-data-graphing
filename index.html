@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+    <div id="top-container">
+        <div id="filter-container">
+            <h1>Filters</h1>
+            From: <input type="date" class="date-form" value="2019-06-25">
+            To: <input type="date" class="date-form" value="2019-07-25">
+            <br>
+            <br>
+
+            Currency: 
+            <select class="currency-selection">
+                <option value="EUR">Euro</option>
+                <option value="USD">Dollar</option>
+            </select>
+        </div>
+        
+        <div id="values-container">
+            <h1>Values</h1>
+            Min : <span id="minValue"></span><br>
+            Max : <span id="maxValue"></span>
+        </div>
+    </div>
+
+    <canvas id="myChart" width="200" height="100"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

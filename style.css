@@ -1,0 +1,12 @@
+#top-container {
+    display : flex;
+    justify-content: space-between
+}
+
+#filter-container {
+    width : 30%;
+}
+
+#values-container {
+    width : 30%;
+}
